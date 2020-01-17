@@ -2,8 +2,6 @@
     'use strict';
 
     $(window).on("load", function() {
-		// checkSize();
-	    // $(window).resize(checkSize);
 
 		background();
 		
@@ -36,27 +34,8 @@
 	    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
 	});
 
-	// testimonial carousel
-	// $('.feature-carousel').owlCarousel({
-	// 	loop: true,
-	// 	margin: 15,
-	// 	smartSpeed: 800,
-	// 	nav: false,
-	// 	dots: false,
-	// 	autoplay: true,
-	// 	responsiveClass: true,
-	// 	responsive: {
-	// 		0: {
-	// 			items: 1
-	// 		},
-	// 		992: {
-	// 			items: 4
-	// 		}
-	// 	}
-	// });
-
 	// Activate lightcase
-    // $('a[data-rel^=lightcase]').lightcase();
+    $('a[data-rel^=lightcase]').lightcase();
 
 
 
