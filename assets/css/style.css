@@ -139,6 +139,11 @@ img {
     display: inline-block;
 }
 
+.site-btn:hover {
+    background: #b30611;
+    color: #fff;
+}
+
 .header-right .site-btn img {
     transform: translate(5px, -1px);
 }
@@ -146,6 +151,10 @@ img {
 .top-menu a {
     color: #fff;
     font-weight: 500;
+}
+
+.top-menu a:hover {
+    color: #E7212D;
 }
 
 .top-menu li {
@@ -198,6 +207,41 @@ img {
 
 .single-hero-item .d-table-cell {
     vertical-align: middle;
+}
+
+.single-hero-item .site-btn img {
+    width: auto !important;
+}
+
+@keyframes zoombg {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    100% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3)
+    }
+}
+
+.single-hero-item {
+    position: relative;
+    overflow: hidden;
+    height: 615px;
+}
+
+.single-hero-item .bg_img {
+    -webkit-animation: zoombg 10s infinite;
+    animation: zoombg 10s infinite;
+    transition: .6s;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
 }
 
 /* feature area css */
@@ -286,7 +330,7 @@ img {
     background: #282C4F;
 }
 
-h2.section-heading {
+.section-heading {
     text-align: center;
     color: #fff;
     font-size: 50px;
@@ -319,6 +363,12 @@ h2.section-heading {
 .single-working-process .icon {
     margin-bottom: 25px;
     margin-top: -10px;
+    transition: .2s;
+    backface-visibility: hidden;
+}
+
+.single-working-process:hover .icon {
+    transform: scale(.8);
 }
 
 .working-process-area h2.section-heading {
@@ -453,8 +503,26 @@ section.working-process-area h2.section-heading {
     font-size: 20px;
 }
 
+.inline-btn:hover {
+    background: #E8212D;
+    color: #fff;
+    border-color: #E8212D;
+}
+
 .inline-btn img {
     transform: translateX(15px);
+}
+
+.inline-btn .light {
+    display: none;
+}
+
+.inline-btn:hover .light {
+    display: inline-block;
+}
+
+.inline-btn:hover .dark {
+    display: none;
 }
 
 /* newslater area css */
@@ -512,6 +580,10 @@ section.working-process-area h2.section-heading {
     top: 0;
 }
 
+.newslater-form input[type=submit]:hover {
+    background: #B30611;
+}
+
 /* footer css */
 .footer-area {
     background: #142D47;
@@ -525,6 +597,15 @@ section.working-process-area h2.section-heading {
     border-top: 1px solid #1D354E;
     color: #517090;
     font-size: 14px;
+}
+
+.copyright-text a{
+    color: #9097A0;
+    font-weight: 600;
+}
+
+.copyright-text a:hover{
+    color: #E8212D
 }
 
 .address-widget {
