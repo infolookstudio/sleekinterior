@@ -27,7 +27,7 @@ button:focus {
 
 html,
 body {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 15px;
@@ -56,11 +56,12 @@ input[type="text"],
 input[type="email"],
 input[type="number"],
 input[type="url"],
+input[type="tel"],
 select,
 textarea {
     border: 1px solid #CACACA;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border-radius: 5px;
 }
 
@@ -151,14 +152,12 @@ img {
 .top-menu a {
     color: #fff;
     font-weight: 500;
+    padding: 15px;
 }
 
 .top-menu a:hover {
-    color: #E7212D;
-}
-
-.top-menu li {
-    margin: 0 15px;
+    background: #484D72;
+    color: #fff;
 }
 
 .header-right .site-btn {
@@ -218,6 +217,7 @@ img {
         -webkit-transform: scale(1);
         transform: scale(1)
     }
+
     100% {
         -webkit-transform: scale(1.3);
         transform: scale(1.3)
@@ -599,12 +599,12 @@ section.working-process-area h2.section-heading {
     font-size: 14px;
 }
 
-.copyright-text a{
+.copyright-text a {
     color: #9097A0;
     font-weight: 600;
 }
 
-.copyright-text a:hover{
+.copyright-text a:hover {
     color: #E8212D
 }
 
@@ -659,4 +659,271 @@ section.working-process-area h2.section-heading {
 
 .footer-last-widget .site-btn img {
     transform: translateX(7px);
+}
+
+/* catalouge page css */
+.catalogue-area {
+    padding-top: 30px;
+    padding-bottom: 70px;
+    background: #E9E9ED;
+}
+
+.catalogue-list {
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #DFDFE7;
+}
+
+.catalogue-list ul {
+    padding: 0;
+    margin: 0;
+    height: 550px;
+}
+
+.catalogue-list ul a {
+    padding: 0;
+}
+
+.catalogue-list ul img {
+    height: 130px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.catalogue-list ul li:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+.catalogue-list ul {
+    overflow-y: scroll;
+}
+
+.catalogue-area {
+    padding-top: 30px;
+    padding-bottom: 70px;
+    background: #E9E9ED;
+}
+
+.catalogue-list {
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #DFDFE7;
+}
+
+.catalogue-list ul {
+    padding: 0;
+    margin: 0;
+    height: 550px;
+}
+
+.catalogue-list ul a {
+    padding: 0;
+}
+
+.catalogue-list ul img {
+    height: 130px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.catalogue-list ul li:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+.catalogue-list ul {
+    overflow-y: scroll;
+}
+
+.tab-pane {
+    background: #fff;
+    padding: 12px;
+    padding-top: 25px;
+    border: 1px solid #DCDCE3;
+    text-align: center;
+}
+
+.tab-pane .title {
+    font-size: 30px;
+    color: #25273B;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.tab-pane img {
+    width: 100%;
+    height: 455px;
+    object-fit: cover;
+}
+
+/* contact page css */
+.breadcrumb-text span {
+    font-size: 104px;
+    display: block;
+}
+
+.breadcrumb-text .big-text {
+    font-size: 280px;
+    line-height: .9;
+    text-align: center;
+    color: #fff;
+}
+
+.contact-breadcrumb {
+    padding: 120px 0;
+    position: relative;
+}
+
+.contact-breadcrumb::after {
+    content: "";
+    background: #E8212D;
+    width: 50%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+}
+
+.contact-breadcrumb::before {
+    background-image: url(../img/contact-bg-1.jpg);
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    content: "";
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.breadcrumb-text img {
+    margin: 0 auto;
+}
+
+.breadcrumb-text {
+    text-align: center;
+}
+
+/* contact from css */
+.contact-area {
+    padding-top: 70px;
+    padding-bottom: 80px;
+    background: #E9E9ED;
+}
+
+.contact-area .title {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 35px;
+    color: #25273B;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: 1px solid #E1E1E1;
+    border-radius: 0;
+    width: 100%;
+    padding: 13px 10px;
+    font-weight: 500;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #585B7A;
+    color: #282C4F;
+}
+
+.contact-form input:focus::placeholder,
+.contact-form textarea:focus::placeholder {
+    color: #282C4F;
+}
+
+.contact-form textarea {
+    height: 140px;
+}
+
+.submit-area {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.submit-area input[type=file] {
+    background: #DBDBDB;
+    display: none;
+}
+
+.submit-area input[type=submit] {
+    background: #40466E;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    flex-basis: 50%;
+    padding: 11px;
+}
+
+.submit-area input[type=submit]:hover {
+    background: #E7212D;
+}
+
+.submit-area label {
+    background: #DBDBDB;
+    flex-basis: 50%;
+    line-height: 50px;
+    margin: 0;
+    color: #505051;
+    cursor: pointer;
+}
+
+.submit-area label img {
+    margin-right: 10px;
+}
+
+/* contact info css */
+.contact-info li span {
+    background: #40466E;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #FFFFFF;
+    margin-right: 15px;
+}
+
+.contact-info li a {
+    display: inline-block;
+    color: #40466E;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.contact-info li p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #40466E;
+}
+
+.contact-info li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info li span {
+    flex-basis: 50px;
+}
+
+.contact-info li .links {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info li .links .link {
+    display: flex;
+    flex-direction: column;
 }
