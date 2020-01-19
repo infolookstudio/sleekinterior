@@ -927,3 +927,14 @@ section.working-process-area h2.section-heading {
     display: flex;
     flex-direction: column;
 }
+
+.logo-widget {
+    position: relative;
+}
+
+.logo-widget img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -80px;
+}
