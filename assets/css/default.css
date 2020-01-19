@@ -1,5 +1,8 @@
 /* Deafult Margin & Padding */
 /*-- Margin Top --*/
+.mt-none-70 {
+	margin-top: -70px;
+}
 .mt-5 {
 	margin-top: 5px;
 }
